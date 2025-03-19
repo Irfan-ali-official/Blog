@@ -13,6 +13,12 @@ function NewPost(props) {
         <label htmlFor="name">Your name</label>
         <input type="text" id="name" required onChange={props.onbodyChange} />
       </p>
+      <p className={classes.actions}>
+        <button type="button" onClick={props.onCancel}>
+          Cancel
+        </button>
+        <button>Submit</button>
+      </p>
     </form>
   );
 }
